@@ -7,8 +7,7 @@ const FooterComponent = () => {
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             {/* Copyright */}
             <p className="text-sm text-[hsl(0_0%_60%)] font-mono">
-                © 2025 Omar Ashurbayov | Built with{' '}
-                <span className="text-[hsl(180_100%_50%)]">React</span> and <span className="text-[hsl(180_100%_50%)]"> Tailwindcss </span>
+                © 2025 Omar Ashurbayov
             </p>
 
             {/* Social Links */}

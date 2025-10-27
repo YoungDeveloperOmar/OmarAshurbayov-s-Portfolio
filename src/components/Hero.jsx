@@ -16,7 +16,7 @@ const HeroComponent = () => {
             <div className="absolute bottom-20 right-10 w-96 h-96 bg-[hsl(140_100%_50%_/0.2)] rounded-full blur-3xl animate-glow -z-10" style={{ animationDelay: '1s' }} />
 
         
-            <div className="grid md:grid-cols-2 gap-10 lg:gap-40 items-center z-20 w-full">
+            <div className="grid md:grid-cols-2 gap-10 lg:gap-20 items-center z-20 w-full">
                 {/* Left */}
                 <div className="space-y-8 pl-5 md:pl-12 w-full">
                     <p className="font-mono text-sm md:text-base text-gray-400 flex items-center gap-2 text-nowrap">
