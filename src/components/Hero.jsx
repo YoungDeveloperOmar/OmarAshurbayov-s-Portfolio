@@ -46,7 +46,7 @@ const HeroComponent = () => {
                     <h1 className="text-5xl md:text-7xl font-bold leading-tight text-white">
                         Hi, I&apos;m
                         <span className="block bg-clip-text text-transparent bg-linear-to-r from-emerald-400 via-teal-300 to-cyan-400">
-                            Omar Ashrubayov
+                            Omar Ashurbayov
                         </span>
                     </h1>
 
