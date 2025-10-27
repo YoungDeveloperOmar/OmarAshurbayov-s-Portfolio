@@ -7,10 +7,14 @@ const HeroComponent = () => {
     }
 
     return (
-        <main id="home" className="container mih-h-screen flex items-center justify-center overflow-hidden">
+        <main id="home" className="container mih-h-screen  md:pt-4 lg:mx-20 flex items-center justify-center overflow-hidden">
             {/* Background Grid */}
             <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none" />
             <div className="absolute inset-0 bg-linear-to-b from-background via-background/50 to-background pointer-events-none" />
+            
+            <div className="absolute top-20 left-10 w-72 h-72 bg-[hsl(180_100%_50%_/0.2)] rounded-full blur-3xl animate-glow" />
+            <div className="absolute bottom-20 right-10 w-96 h-96 bg-[hsl(140_100%_50%_/0.2)] rounded-full blur-3xl animate-glow" style={{ animationDelay: '1s' }} />
+
         
             <div className="grid md:grid-cols-2 gap-12 lg:gap-80 items-center z-20">
                 {/* Left */}
