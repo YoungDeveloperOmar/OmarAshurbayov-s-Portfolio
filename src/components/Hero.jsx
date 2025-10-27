@@ -7,19 +7,19 @@ const HeroComponent = () => {
     }
 
     return (
-        <main id="home" className="container mih-h-screen  md:pt-4 lg:mx-20 flex items-center justify-center overflow-hidden">
+        <main id="home" className="container relative px-8 md:px-12 lg:px-16 mih-h-screen  md:pt-4 flex items-center justify-center overflow-hidden">
             {/* Background Grid */}
             <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none" />
             <div className="absolute inset-0 bg-linear-to-b from-background via-background/50 to-background pointer-events-none" />
             
-            <div className="absolute top-20 left-10 w-72 h-72 bg-[hsl(180_100%_50%_/0.2)] rounded-full blur-3xl animate-glow" />
-            <div className="absolute bottom-20 right-10 w-96 h-96 bg-[hsl(140_100%_50%_/0.2)] rounded-full blur-3xl animate-glow" style={{ animationDelay: '1s' }} />
+            <div className="absolute top-20 left-10 w-72 h-72 bg-[hsl(180_100%_50%_/0.2)] rounded-full blur-3xl animate-glow -z-10" />
+            <div className="absolute bottom-20 right-10 w-96 h-96 bg-[hsl(140_100%_50%_/0.2)] rounded-full blur-3xl animate-glow -z-10" style={{ animationDelay: '1s' }} />
 
         
-            <div className="grid md:grid-cols-2 gap-12 lg:gap-80 items-center z-20">
+            <div className="grid md:grid-cols-2 gap-10 lg:gap-40 items-center z-20 w-full">
                 {/* Left */}
-                <div className="space-y-8 pl-8 md:pl-12">
-                    <p className="font-mono text-sm md:text-base text-gray-400 flex items-center gap-2">
+                <div className="space-y-8 pl-5 md:pl-12 w-full">
+                    <p className="font-mono text-sm md:text-base text-gray-400 flex items-center gap-2 text-nowrap">
                         <span className="text-emerald-400">&gt;</span>
                         <span>
                             console.log(
@@ -43,7 +43,7 @@ const HeroComponent = () => {
 
                     <div className='space-y-4'>
                         
-                    <h1 className="text-5xl md:text-7xl font-bold leading-tight text-white">
+                    <h1 className="text-4xl lg:text-6xl font-bold leading-tight text-white">
                         Hi, I&apos;m
                         <span className="block bg-clip-text text-transparent bg-linear-to-r from-emerald-400 via-teal-300 to-cyan-400">
                             Omar Ashurbayov
@@ -57,24 +57,27 @@ const HeroComponent = () => {
                     </h2>
 
                     <p className="text-gray-400 text-lg md:text-xl max-w-2xl leading-relaxed">
-                        Building <span className="text-white font-semibold">efficient</span>,<span className="text-white font-semibold">scalable</span>, and
+                        Building <span className="text-white font-semibold">efficient</span>, <span className="text-white font-semibold">scalable</span>, and
                         <span className="text-white font-semibold"> intelligent</span> interfaces for modern applications — connecting
                         software with real-world systems.
                     </p>
 
                     </div>
 
-                    <div className="flex gap-4 pt-4 text-white">
-                        <button className="px-6 py-3 bg-emerald-400 text-glow-animated text-black 
-                                rounded-lg font-semibold shadow-lg transition-transform 
-                                hover:scale-105 cursor-pointer"
-                            onClick={() => scrollTo('#projects')}>
-                            View My Work →
+                    <div className="flex flex-wrap gap-4 pt-4 pr-4 text-white">
+                        <button
+                            className="flex-1 min-w-40 px-6 py-3 bg-emerald-400 text-glow-animated text-black text-center
+                                rounded-lg font-semibold shadow-lg transition-transform hover:scale-105 cursor-pointer"
+                            onClick={() => scrollTo('#projects')}
+                        >
+                            View My Work
                         </button>
-                        <button className="px-6 py-3 border-2 border-emerald-500 text-glow-animated
-                                text-emerald-400 rounded-lg font-semibold shadow-lg 
-                                transition-transform hover:scale-105 cursor-pointer"
-                            onClick={() => scrollTo('#contact')}>
+
+                        <button
+                            className="flex-1 min-w-40 px-6 py-3 border-2 border-emerald-500 text-glow-animated text-emerald-400 text-center
+                                rounded-lg font-semibold shadow-lg transition-transform hover:scale-105 cursor-pointer"
+                            onClick={() => scrollTo('#contact')}
+                        >
                             Contact Me
                         </button>
                     </div>
@@ -123,7 +126,7 @@ const HeroComponent = () => {
                         </div>
                     </div>
 
-                    <div className='absolute bottom-0 left-1/2 -translate-x-1/2 w-[56%] md:w-[50%] rounded-xl glass-card animate-fade-in export border border-white/10 p-2 shadow-xl z-20' style={{ animationDelay: '0.6s' }}>
+                    <div className='absolute bottom-2 left-1/2 -translate-x-1/2 max-w-[70%] w-fit sm::w-[65%] lg:w-[60%] rounded-xl glass-card animate-fade-in border border-white/10 p-2 shadow-xl z-20' style={{ animationDelay: '0.6s' }}>
                         <div className='flex items-center gap-3'>
                             <div className="w-3 h-3 rounded-full bg-emerald-400 animate-pulse" />
                             <div>
