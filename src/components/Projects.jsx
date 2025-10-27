@@ -42,17 +42,17 @@ const ProjectsComponent = () => {
                 </div>
 
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-5">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-5 ">
                     {projects.map((project, index) => (
                         <div
                             key={index}
-                            className="group relative animate-fade-in-up"
+                            className="group relative animate-fade-in-up "
                             style={{ animationDelay: `${index * 0.15}s` }}
                         >
                             {/* Animated gradient background */}
                             <div className={`absolute -inset-1 bg-linear-to-br ${project.gradient} rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity blur-xl`} />
                             
-                            <div className="relative h-full glass-card overflow-hidden hover:border-[hsl(180_100%_50%_/0.6)] transition-all duration-500 hover:shadow-2xl hover:shadow-hsl(180_100%_50%_/0.2)]/ hover:-translate-y-2">
+                            <div className="relative h-full glass-card overflow-hidden hover:border-[hsl(180_100%_50%_/0.6)] transition-all duration-500 hover:shadow-2xl hover:shadow-hsl(180_100%_50%_/0.2)]/ hover:-translate-y-2 rounded-2xl">
                             {/* Gradient overlay on hover */}
                             <div className={`absolute inset-0 bg-linear-to-br ${project.gradient} opacity-0 group-hover:opacity-20 transition-opacity duration-500`} />
 

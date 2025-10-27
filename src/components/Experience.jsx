@@ -41,7 +41,7 @@ const ExperienceComponent = () => {
             <div className="animate-fade-in-up" style={{ animationDelay: `0s` }}>
               <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-[hsl(180_100%_50%_/0.2)] via-[hsl(140_100%_50%_/0.2)] to-[hsl(180_100%_50%_/0.2)] rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity blur-xl" />
-                <div className="relative glass-card p-8 md:p-10 hover:border-[hsl(180_100%_50%_/0.6)] hover:shadow-2xl hover:shadow-[hsl(180_100%_50%_/0.2)] transition-all duration-500 md:ml-20 hover:-translate-y-1">
+                <div className="relative glass-card p-8 md:p-10 hover:border-[hsl(180_100%_50%_/0.6)] hover:shadow-2xl hover:shadow-[hsl(180_100%_50%_/0.2)] transition-all duration-500 md:ml-20 hover:-translate-y-1 rounded-2xl">
                   {/* Enhanced Timeline dot */}
                   <div className={`absolute -left-20 top-10 w-14 h-14 rounded-xl bg-gradient-to-br from-[hsl(180_100%_50%_/0.3)] to-[hsl(180_100%_50%_/0.1)] border-2 border-[hsl(180_100%_50%_/0.6)] hidden md:flex items-center justify-center group-hover:scale-110 group-hover:shadow-lg shadow-[hsl(180_100%_50%_/0.5)] transition-all duration-300`}>
                     <Briefcase className={`h-6 w-6 ${colorMap.primary.text}`} />
@@ -86,7 +86,7 @@ const ExperienceComponent = () => {
             <div className="animate-fade-in-up" style={{ animationDelay: `0.15s` }}>
               <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-[hsl(180_100%_50%_/0.2)] via-[hsl(140_100%_50%_/0.2)] to-[hsl(180_100%_50%_/0.2)] rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity blur-xl" />
-                <div className="relative glass-card p-8 md:p-10 hover:border-[hsl(180_100%_50%_/0.6)] hover:shadow-2xl hover:shadow-[hsl(180_100%_50%_/0.2)] transition-all duration-500 md:ml-20 hover:-translate-y-1">
+                <div className="relative glass-card p-8 md:p-10 hover:border-[hsl(180_100%_50%_/0.6)] hover:shadow-2xl hover:shadow-[hsl(180_100%_50%_/0.2)] transition-all duration-500 md:ml-20 hover:-translate-y-1 rounded-2xl">
                   {/* Enhanced Timeline dot */}
                   <div className={`absolute -left-20 top-10 w-14 h-14 rounded-xl bg-gradient-to-br from-[hsl(140 100% 50%_/0.3)] to-[hsl(180_100%_50%_/0.1)] border-2 border-[hsl(180_100%_50%_/0.6)] hidden md:flex items-center justify-center group-hover:scale-110 group-hover:shadow-lg shadow-[hsl(180_100%_50%_/0.5)] transition-all duration-300`}>
                     <Briefcase className={`h-6 w-6 ${colorMap.secondary.text}`} />
