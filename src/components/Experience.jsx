@@ -74,7 +74,10 @@ const ExperienceComponent = () => {
                         Real-Time Systems
                       </span>
                       <span className="px-4 py-2 text-sm font-mono bg-gradient-to-br from-[hsl(220_15%_15%)]  to-[hsl(220_15%_15%_/0.5)] rounded-lg border border-[hsl(180_100%_50%_/0.3)] text-[hsl(0_0%_95%)] hover:border-[hsl(180_100%_50%_/0.6)] hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 hover:scale-105">
-                        Hardware Integration
+                        GitHub Actions
+                      </span>
+                        <span className="px-4 py-2 text-sm font-mono bg-gradient-to-br from-[hsl(220_15%_15%)]  to-[hsl(220_15%_15%_/0.5)] rounded-lg border border-[hsl(180_100%_50%_/0.3)] text-foreground hover:border-[hsl(180_100%_50%_/0.6)] hover:shadow-lg hover:shadow-[hsl(180_100%_50%_/0.2)] transition-all duration-300 hover:scale-105">
+                        CI/CD Pipelines
                       </span>
                     </div>
                   </div>
