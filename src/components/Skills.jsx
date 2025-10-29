@@ -1,25 +1,33 @@
 
 import {ReactOriginal, JavascriptOriginal, PythonOriginal
-    , MysqlOriginal, COriginal, Html5Original, TailwindcssOriginal
-    ,   GitOriginal, GithubactionsOriginal
+    , MysqlOriginal, COriginal, Html5Original, TailwindcssOriginal, VuejsOriginal, JavaOriginal, LuaOriginal,
+      GitOriginal, GithubactionsOriginal, TypescriptOriginal, CplusplusOriginal, CsharpOriginal
 } from 'devicons-react'
 
-import {Database} from 'lucide-react'
+import {Database, WebhookIcon, Workflow} from 'lucide-react'
 import { useState } from 'react';
 
 const SkillsComponent = () => {
     const [activeCategory, setActiveCategory] = useState('All');
 
     const skills = [
-    { name: 'React', icon: <ReactOriginal size={64} className='text-[hsl(180_100%_50%)] group-hover:scale-125 transition-transform duration-300 filter group-hover:drop-shadow-[0_0_10px_rgba(0,240,255,0.5)]' />, category: 'Frontend' },
-    { name: 'JavaScript', icon: <JavascriptOriginal size={64} className='text-[hsl(180_100%_50%)] group-hover:scale-125 transition-transform duration-300 filter group-hover:drop-shadow-[0_0_10px_rgba(0,240,255,0.5)]' />, category: 'Backend' },
-    { name: 'Python', icon: <PythonOriginal size={64} className='text-[hsl(180_100%_50%)] group-hover:scale-125 transition-transform duration-300 filter group-hover:drop-shadow-[0_0_10px_rgba(0,240,255,0.5)]' />, category: 'Backend' },
-    { name: 'SQL', icon: <Database size={64} strokeWidth={1.5} className='text-[hsl(180_100%_50%)] group-hover:scale-125 transition-transform duration-300 filter group-hover:drop-shadow-[0_0_10px_rgba(0,240,255,0.5)]' />, category: 'Backend' },
     { name: 'C', icon: <COriginal size={64} className='text-[hsl(180_100%_50%)] group-hover:scale-125 transition-transform duration-300 filter group-hover:drop-shadow-[0_0_10px_rgba(0,240,255,0.5)]' />, category: 'Backend' },
+    { name: 'C++', icon: <CplusplusOriginal size={64} className='text-[hsl(180_100%_50%)] group-hover:scale-125 transition-transform duration-300 filter group-hover:drop-shadow-[0_0_10px_rgba(0,240,255,0.5)]' />, category: 'Backend' },
+    { name: 'C#', icon: <CsharpOriginal size={64} className='text-[hsl(180_100%_50%)] group-hover:scale-125 transition-transform duration-300 filter group-hover:drop-shadow-[0_0_10px_rgba(0,240,255,0.5)]' />, category: 'Backend' },
+    { name: 'Python', icon: <PythonOriginal size={64} className='text-[hsl(180_100%_50%)] group-hover:scale-125 transition-transform duration-300 filter group-hover:drop-shadow-[0_0_10px_rgba(0,240,255,0.5)]' />, category: 'Backend' },
+    { name: 'Java', icon: <JavaOriginal size={64} className='text-[hsl(180_100%_50%)] group-hover:scale-125 transition-transform duration-300 filter group-hover:drop-shadow-[0_0_10px_rgba(0,240,255,0.5)]' />, category: 'Backend' },
+    { name: 'SQL', icon: <Database size={64} strokeWidth={1.5} className='text-[hsl(180_100%_50%)] group-hover:scale-125 transition-transform duration-300 filter group-hover:drop-shadow-[0_0_10px_rgba(0,240,255,0.5)]' />, category: 'Backend' },
+    { name: 'REST APIs', icon: <WebhookIcon size={64} strokeWidth={1.5} className='text-[hsl(180_100%_50%)] group-hover:scale-125 transition-transform duration-300 filter group-hover:drop-shadow-[0_0_10px_rgba(0,240,255,0.5)]' />, category: 'Backend' },
     { name: 'HTML/CSS', icon: <Html5Original size={64} className='text-[hsl(180_100%_50%)] group-hover:scale-125 transition-transform duration-300 filter group-hover:drop-shadow-[0_0_10px_rgba(0,240,255,0.5)]' />, category: 'Frontend' },
+    { name: 'React', icon: <ReactOriginal size={64} className='text-[hsl(180_100%_50%)] group-hover:scale-125 transition-transform duration-300 filter group-hover:drop-shadow-[0_0_10px_rgba(0,240,255,0.5)]' />, category: 'Frontend' },
+    { name: 'JavaScript', icon: <JavascriptOriginal size={64} className='text-[hsl(180_100%_50%)] group-hover:scale-125 transition-transform duration-300 filter group-hover:drop-shadow-[0_0_10px_rgba(0,240,255,0.5)]' />, category: 'Frontend' },
+    { name: 'TypeScript', icon: <TypescriptOriginal size={64} className='text-[hsl(180_100%_50%)] group-hover:scale-125 transition-transform duration-300 filter group-hover:drop-shadow-[0_0_10px_rgba(0,240,255,0.5)]' />, category: 'Frontend' },
+    { name: 'Vue.JS', icon: <VuejsOriginal size={64} className='text-[hsl(180_100%_50%)] group-hover:scale-125 transition-transform duration-300 filter group-hover:drop-shadow-[0_0_10px_rgba(0,240,255,0.5)]' />, category: 'Frontend' },
     { name: 'Tailwindcss', icon: <TailwindcssOriginal size={64} className='text-[hsl(180_100%_50%)] group-hover:scale-125 transition-transform duration-300 filter group-hover:drop-shadow-[0_0_10px_rgba(0,240,255,0.5)]' />, category: 'Frontend' },
     { name: 'Git', icon: <GitOriginal size={64} className='text-[hsl(180_100%_50%)] group-hover:scale-125 transition-transform duration-300 filter group-hover:drop-shadow-[0_0_10px_rgba(0,240,255,0.5)]' />, category: 'Tools' },
     { name: 'CI/CD', icon: <GithubactionsOriginal size={64} className='text-[hsl(180_100%_50%)] group-hover:scale-125 transition-transform duration-300 filter group-hover:drop-shadow-[0_0_10px_rgba(0,240,255,0.5)]' />, category: 'Tools' },
+    { name: 'Sensors Data Pipelines', icon: <Workflow size={64} strokeWidth={1.5} className='text-[hsl(180_100%_50%)] group-hover:scale-125 transition-transform duration-300 filter group-hover:drop-shadow-[0_0_10px_rgba(0,240,255,0.5)]' />, category: 'Tools' },
+
   ];
 
   const categories = ['All', 'Frontend', 'Backend', 'Tools'];

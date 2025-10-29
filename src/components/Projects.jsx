@@ -5,26 +5,26 @@ const ProjectsComponent = () => {
     {
       title: 'Drone Control Software',
       description: 'Developed autonomous drone software using C to enhance flight functionality, including navigation algorithms and real-time system control.',
-      tech: ['C', 'Embedded Systems', 'Real-Time Processing', 'Hardware Integration'],
+      tech: ['C', 'STM32', 'CI/CD', 'Hardware Integration'],
       gradient: 'from-[hsl(180_100%_50%_/0.2)] to-[hsl(180_100%_50%_/0.2)]',
-      githubLink: 'https://github.com/YoungDeveloperOmar/DroneControl',
-      externalLink: 'https://dronecontrol-demo.site',
+      githubLink: 'https://github.com/YoungDeveloperOmar/Drone-Development-NUCLEO-F446RE',
+    //   externalLink: 'https://dronecontrol-demo.site',
     },
     {
       title: 'Real Estate Database',
       description: 'Designed and implemented a comprehensive database system for property management using Python and SQL, with version control via GitHub.',
-      tech: ['Python', 'SQL', 'Database Design', 'GitHub', 'Data Modeling'],
+      tech: ['Python', 'MySQL', 'Database Design', 'GitHub', 'CI/CD'],
       gradient: 'from-[hsl(180_100%_50%_/0.2)] to-[hsl(180_100%_50%_/0.2)]',
       githubLink: 'https://github.com/Austin2gitgub/Real-Estate-DB-CS425',
-      externalLink: 'https://realestate-demo.site',
+    //   externalLink: 'https://realestate-demo.site',
     },
     {
-      title: 'Codify Front-End',
-      description: 'Built responsive React components and improved UX for internal applications, focusing on performance optimization and modern design patterns.',
-      tech: ['React', 'JavaScript', 'UI/UX', 'Performance', 'Responsive Design'],
+      title: 'Personal Portfolio',
+      description: 'Designed and developed my professional portfolio website with React, featuring responsive layouts, smooth animations, and sections for projects, experience, and skills—focused on performance and clean UI/UX.',
+      tech: ['React', 'JavaScript', 'UI/UX', 'Tailwindcss', 'Responsive Design'],
       gradient: 'from-[hsl(180_100%_50%_/0.2)] to-[hsl(180_100%_50%_/0.1)]',
-      githubLink: 'https://github.com/YoungDeveloperOmar/CodifyFrontend',
-      externalLink: 'https://codify-demo.site',
+      githubLink: 'https://github.com/YoungDeveloperOmar/OmarAshurbayov-s-Portfolio',
+      externalLink: 'https://omarashurbayov.com',
     },
   ];
 
@@ -64,22 +64,22 @@ const ProjectsComponent = () => {
                                     {project.title}
                                     </h3>
                                     <div className="flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-[hsl(0_0%_95%)]">
-                                    {/* <a
+                                    <a
                                         href={project.githubLink}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="h-9 w-9 hover:bg-[hsl(180_100%_50%_/0.2)] hover:text-[hsl(180_100%_50%)] transition-all cursor-pointer flex items-center justify-center rounded-xl"
                                     >
                                         <Github className="h-6 w-6" />
-                                    </a> */}
-                                    {/* <a
+                                    </a>
+                                    {project.externalLink && ( <a
                                         href={project.externalLink}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="h-9 w-9 hover:bg-[hsl(180_100%_50%_/0.2)] hover:text-[hsl(180_100%_50%)] transition-all flex items-center justify-center cursor-pointer rounded-full"
                                     >
                                         <ExternalLink className="h-6 w-6" />
-                                    </a> */}
+                                    </a> ) }
                                     </div>
                                 </div>
                                 </div>
