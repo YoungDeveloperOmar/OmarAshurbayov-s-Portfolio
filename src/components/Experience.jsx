@@ -56,7 +56,7 @@ const ExperienceComponent = () => {
                           <span className="font-mono">Jan 2025 - Present</span>
                         </div>
                       </div>
-                      <p className={`text-xl font-bold ${colorMap.primary.text} text-glow`}>Drone Club</p>
+                      <p className={`text-xl font-bold ${colorMap.primary.text} text-glow`}>Drone Development & Air-sports Organization</p>
                     </div>
 
                     <p className="text-base md:text-lg text-[hsl(0_0%_95%)] leading-relaxed">
