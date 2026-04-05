@@ -26,6 +26,15 @@ const ProjectsComponent = () => {
       githubLink: 'https://github.com/YoungDeveloperOmar/OmarAshurbayov-s-Portfolio',
       externalLink: 'https://omarashurbayov.com',
     },
+    {
+        title: 'Memento - Dementia Care Companion',
+        description: 'Built a full-stack dementia care platform that helps caregivers manage routines, medications, emergency contacts, and memory notes while giving patients a calm, personalized portal with AI-powered support.',
+        tech: ['React', 'TypeScript', 'Node.js', 'CI/CD', 'SQLite', 'OpenAI API', 'Tailwind CSS'],
+        gradient: 'from-[hsl(160_45%_55%_/0.22)] to-[hsl(190_55%_65%_/0.12)]',
+        githubLink: 'https://github.com/YoungDeveloperOmar/Memento',
+        externalLink: 'https://devpost.com/software/memento-rd7vea?ref_content=my-projects-tab&ref_feature=my_projects',
+    },
+
   ];
 
   return (

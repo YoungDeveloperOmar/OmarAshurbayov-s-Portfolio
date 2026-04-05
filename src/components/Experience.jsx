@@ -101,7 +101,7 @@ const ExperienceComponent = () => {
                         <h3 className="text-2xl md:text-3xl font-bold text-[hsl(0_0%_95%)]">Front-End Developer</h3>
                         <div className="flex items-center gap-2 text-sm text-[hsl(0_0%_60%)] px-3 py-1 bg-muted/50 rounded-lg">
                           <Calendar className="h-4 w-4" />
-                          <span className="font-mono">Jan 2025 - Present</span>
+                          <span className="font-mono">Jan 2025 - May 2026</span>
                         </div>
                       </div>
                       <p className={`text-xl font-bold ${colorMap.secondary.text} text-glow`}>Codify</p>
