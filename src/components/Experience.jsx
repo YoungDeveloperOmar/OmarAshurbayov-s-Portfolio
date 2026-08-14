@@ -17,6 +17,13 @@ const ExperienceComponent = () => {
       text: 'text-secondary',
       shadow: 'group-hover:shadow-secondary/50',
     },
+    ibm: {
+      from: 'from-[hsl(210_100%_60%)_/0.3]',
+      to: 'to-[hsl(210_100%_60%)_/0.1]',
+      border: 'border-[hsl(210_100%_60%)_/0.6]',
+      text: 'text-[hsl(210_100%_60%)]',
+      shadow: 'group-hover:shadow-[hsl(210_100%_60%)_/0.5]',
+    },
   };
 
   return (
@@ -37,47 +44,44 @@ const ExperienceComponent = () => {
             <div className="absolute left-0 top-0 bottom-0 w-1 rounded-full bg-gradient-to-b from-[hsl(180_100%_50%)] via-[hsl(140_100%_50%)] to-[hsl(180_100%_50%)] opacity-40 hidden md:block ml-6 blur-sm" />
             <div className="absolute left-0 top-0 bottom-0 w-0.5 rounded-full bg-gradient-to-b from-[hsl(180_100%_50%)] via-[hsl(140_100%_50%)] to-[hsl(180_100%_50%)] opacity-60 hidden md:block ml-6" />
 
-            {/* Experience 1: Drone Club */}
+            {/* Experience 1: IBM */}
             <div className="animate-fade-in-up" style={{ animationDelay: `0s` }}>
               <div className="relative group">
-                <div className="absolute -inset-1 bg-gradient-to-r from-[hsl(180_100%_50%_/0.2)] via-[hsl(140_100%_50%_/0.2)] to-[hsl(180_100%_50%_/0.2)] rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity blur-xl" />
-                <div className="relative glass-card p-8 md:p-10 hover:border-[hsl(180_100%_50%_/0.6)] hover:shadow-2xl hover:shadow-[hsl(180_100%_50%_/0.2)] transition-all duration-500 md:ml-20 hover:-translate-y-1 rounded-2xl">
+                <div className="absolute -inset-1 bg-gradient-to-r from-[hsl(210_100%_60%_/0.2)] via-[hsl(220_100%_60%_/0.2)] to-[hsl(210_100%_60%_/0.2)] rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity blur-xl" />
+                <div className="relative glass-card p-8 md:p-10 hover:border-[hsl(210_100%_60%_/0.6)] hover:shadow-2xl hover:shadow-[hsl(210_100%_60%_/0.2)] transition-all duration-500 md:ml-20 hover:-translate-y-1 rounded-2xl">
                   {/* Enhanced Timeline dot */}
-                  <div className={`absolute -left-20 top-10 w-14 h-14 rounded-xl bg-gradient-to-br from-[hsl(180_100%_50%_/0.3)] to-[hsl(180_100%_50%_/0.1)] border-2 border-[hsl(180_100%_50%_/0.6)] hidden md:flex items-center justify-center group-hover:scale-110 group-hover:shadow-lg shadow-[hsl(180_100%_50%_/0.5)] transition-all duration-300`}>
-                    <Briefcase className={`h-6 w-6 ${colorMap.primary.text}`} />
+                  <div className={`absolute -left-20 top-10 w-14 h-14 rounded-xl bg-gradient-to-br from-[hsl(210_100%_60%_/0.3)] to-[hsl(210_100%_60%_/0.1)] border-2 border-[hsl(210_100%_60%_/0.6)] hidden md:flex items-center justify-center group-hover:scale-110 group-hover:shadow-lg shadow-[hsl(210_100%_60%_/0.5)] transition-all duration-300`}>
+                    <Briefcase className={`h-6 w-6 ${colorMap.ibm.text}`} />
                   </div>
 
                   <div className="space-y-6">
                     <div>
                       <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-3">
-                        <h3 className="text-2xl md:text-3xl font-bold text-[hsl(0_0%_95%)]">Software Developer</h3>
+                        <h3 className="text-2xl md:text-3xl font-bold text-[hsl(0_0%_95%)]">Software Developer Intern</h3>
                         <div className="flex items-center gap-2 text-sm text-[hsl(0_0%_60%)] px-3 py-1 bg-muted/50 rounded-lg">
                           <Calendar className="h-4 w-4" />
-                          <span className="font-mono">Jan 2025 - Present</span>
+                          <span className="font-mono">May 2026 - Aug 2026</span>
                         </div>
                       </div>
-                      <p className={`text-xl font-bold ${colorMap.primary.text} text-glow`}>Drone Development & Air-sports Organization</p>
+                      <p className={`text-xl font-bold ${colorMap.ibm.text} text-glow`}>IBM</p>
                     </div>
 
                     <p className="text-base md:text-lg text-[hsl(0_0%_95%)] leading-relaxed">
-                      Developed software for drone control systems using C, enhancing autonomous flight functionality and system reliability.
+                      Migrated over 500 pages of IBM Cognos Analytics from the Carbon 10 to Carbon 11 design system, partnering with engineers and designers to maintain visual and functional consistency, and teamed with QA to resolve 3,000+ Selenium-automated test cases broken by the migration.
                     </p>
 
                     <div className="flex flex-wrap gap-3 cursor-pointer">
-                      <span className="px-4 py-2 text-sm font-mono bg-gradient-to-br from-[hsl(220_15%_15%)]  to-[hsl(220_15%_15%_/0.5)] rounded-lg border border-[hsl(180_100%_50%_/0.3)] text-[hsl(0_0%_95%)] hover:border-[hsl(180_100%_50%_/0.6)] hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 hover:scale-105">
-                        C
+                      <span className="px-4 py-2 text-sm font-mono bg-gradient-to-br from-[hsl(220_15%_15%)]  to-[hsl(220_15%_15%_/0.5)] rounded-lg border border-[hsl(210_100%_60%_/0.3)] text-[hsl(0_0%_95%)] hover:border-[hsl(210_100%_60%_/0.6)] hover:shadow-lg hover:shadow-[hsl(210_100%_60%_/0.2)] transition-all duration-300 hover:scale-105">
+                        Carbon Design System
                       </span>
-                      <span className="px-4 py-2 text-sm font-mono bg-gradient-to-br from-[hsl(220_15%_15%)]  to-[hsl(220_15%_15%_/0.5)] rounded-lg border border-[hsl(180_100%_50%_/0.3)] text-[hsl(0_0%_95%)] hover:border-[hsl(180_100%_50%_/0.6)] hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 hover:scale-105">
-                        Embedded Systems
+                      <span className="px-4 py-2 text-sm font-mono bg-gradient-to-br from-[hsl(220_15%_15%)]  to-[hsl(220_15%_15%_/0.5)] rounded-lg border border-[hsl(210_100%_60%_/0.3)] text-[hsl(0_0%_95%)] hover:border-[hsl(210_100%_60%_/0.6)] hover:shadow-lg hover:shadow-[hsl(210_100%_60%_/0.2)] transition-all duration-300 hover:scale-105">
+                        Accessibility
                       </span>
-                      <span className="px-4 py-2 text-sm font-mono bg-gradient-to-br from-[hsl(220_15%_15%)]  to-[hsl(220_15%_15%_/0.5)] rounded-lg border border-[hsl(180_100%_50%_/0.3)] text-[hsl(0_0%_95%)] hover:border-[hsl(180_100%_50%_/0.6)] hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 hover:scale-105">
-                        Real-Time Systems
+                      <span className="px-4 py-2 text-sm font-mono bg-gradient-to-br from-[hsl(220_15%_15%)]  to-[hsl(220_15%_15%_/0.5)] rounded-lg border border-[hsl(210_100%_60%_/0.3)] text-[hsl(0_0%_95%)] hover:border-[hsl(210_100%_60%_/0.6)] hover:shadow-lg hover:shadow-[hsl(210_100%_60%_/0.2)] transition-all duration-300 hover:scale-105">
+                        Selenium
                       </span>
-                      <span className="px-4 py-2 text-sm font-mono bg-gradient-to-br from-[hsl(220_15%_15%)]  to-[hsl(220_15%_15%_/0.5)] rounded-lg border border-[hsl(180_100%_50%_/0.3)] text-[hsl(0_0%_95%)] hover:border-[hsl(180_100%_50%_/0.6)] hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 hover:scale-105">
-                        GitHub Actions
-                      </span>
-                        <span className="px-4 py-2 text-sm font-mono bg-gradient-to-br from-[hsl(220_15%_15%)]  to-[hsl(220_15%_15%_/0.5)] rounded-lg border border-[hsl(180_100%_50%_/0.3)] text-foreground hover:border-[hsl(180_100%_50%_/0.6)] hover:shadow-lg hover:shadow-[hsl(180_100%_50%_/0.2)] transition-all duration-300 hover:scale-105">
-                        CI/CD Pipelines
+                      <span className="px-4 py-2 text-sm font-mono bg-gradient-to-br from-[hsl(220_15%_15%)]  to-[hsl(220_15%_15%_/0.5)] rounded-lg border border-[hsl(210_100%_60%_/0.3)] text-[hsl(0_0%_95%)] hover:border-[hsl(210_100%_60%_/0.6)] hover:shadow-lg hover:shadow-[hsl(210_100%_60%_/0.2)] transition-all duration-300 hover:scale-105">
+                        QA Automation
                       </span>
                     </div>
                   </div>
@@ -123,6 +127,54 @@ const ExperienceComponent = () => {
                       </span>
                       <span className="px-4 py-2 text-sm font-mono bg-gradient-to-br from-[hsl(220_15%_15%)]  to-[hsl(220_15%_15%_/0.5)] rounded-lg border border-[hsl(180_100%_50%_/0.3)] text-foreground hover:border-[hsl(180_100%_50%_/0.6)] hover:shadow-lg hover:shadow-[hsl(180_100%_50%_/0.2)] transition-all duration-300 hover:scale-105">
                         Performance Optimization
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Experience 3: Drone Club */}
+            <div className="animate-fade-in-up" style={{ animationDelay: `0.3s` }}>
+              <div className="relative group">
+                <div className="absolute -inset-1 bg-gradient-to-r from-[hsl(180_100%_50%_/0.2)] via-[hsl(140_100%_50%_/0.2)] to-[hsl(180_100%_50%_/0.2)] rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity blur-xl" />
+                <div className="relative glass-card p-8 md:p-10 hover:border-[hsl(180_100%_50%_/0.6)] hover:shadow-2xl hover:shadow-[hsl(180_100%_50%_/0.2)] transition-all duration-500 md:ml-20 hover:-translate-y-1 rounded-2xl">
+                  {/* Enhanced Timeline dot */}
+                  <div className={`absolute -left-20 top-10 w-14 h-14 rounded-xl bg-gradient-to-br from-[hsl(180_100%_50%_/0.3)] to-[hsl(180_100%_50%_/0.1)] border-2 border-[hsl(180_100%_50%_/0.6)] hidden md:flex items-center justify-center group-hover:scale-110 group-hover:shadow-lg shadow-[hsl(180_100%_50%_/0.5)] transition-all duration-300`}>
+                    <Briefcase className={`h-6 w-6 ${colorMap.primary.text}`} />
+                  </div>
+
+                  <div className="space-y-6">
+                    <div>
+                      <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-3">
+                        <h3 className="text-2xl md:text-3xl font-bold text-[hsl(0_0%_95%)]">Software Developer</h3>
+                        <div className="flex items-center gap-2 text-sm text-[hsl(0_0%_60%)] px-3 py-1 bg-muted/50 rounded-lg">
+                          <Calendar className="h-4 w-4" />
+                          <span className="font-mono">Jan 2025 - Present</span>
+                        </div>
+                      </div>
+                      <p className={`text-xl font-bold ${colorMap.primary.text} text-glow`}>Drone Development & Air-sports Organization</p>
+                    </div>
+
+                    <p className="text-base md:text-lg text-[hsl(0_0%_95%)] leading-relaxed">
+                      Developed software for drone control systems using C, enhancing autonomous flight functionality and system reliability.
+                    </p>
+
+                    <div className="flex flex-wrap gap-3 cursor-pointer">
+                      <span className="px-4 py-2 text-sm font-mono bg-gradient-to-br from-[hsl(220_15%_15%)]  to-[hsl(220_15%_15%_/0.5)] rounded-lg border border-[hsl(180_100%_50%_/0.3)] text-[hsl(0_0%_95%)] hover:border-[hsl(180_100%_50%_/0.6)] hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 hover:scale-105">
+                        C
+                      </span>
+                      <span className="px-4 py-2 text-sm font-mono bg-gradient-to-br from-[hsl(220_15%_15%)]  to-[hsl(220_15%_15%_/0.5)] rounded-lg border border-[hsl(180_100%_50%_/0.3)] text-[hsl(0_0%_95%)] hover:border-[hsl(180_100%_50%_/0.6)] hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 hover:scale-105">
+                        Embedded Systems
+                      </span>
+                      <span className="px-4 py-2 text-sm font-mono bg-gradient-to-br from-[hsl(220_15%_15%)]  to-[hsl(220_15%_15%_/0.5)] rounded-lg border border-[hsl(180_100%_50%_/0.3)] text-[hsl(0_0%_95%)] hover:border-[hsl(180_100%_50%_/0.6)] hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 hover:scale-105">
+                        Real-Time Systems
+                      </span>
+                      <span className="px-4 py-2 text-sm font-mono bg-gradient-to-br from-[hsl(220_15%_15%)]  to-[hsl(220_15%_15%_/0.5)] rounded-lg border border-[hsl(180_100%_50%_/0.3)] text-[hsl(0_0%_95%)] hover:border-[hsl(180_100%_50%_/0.6)] hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 hover:scale-105">
+                        GitHub Actions
+                      </span>
+                        <span className="px-4 py-2 text-sm font-mono bg-gradient-to-br from-[hsl(220_15%_15%)]  to-[hsl(220_15%_15%_/0.5)] rounded-lg border border-[hsl(180_100%_50%_/0.3)] text-foreground hover:border-[hsl(180_100%_50%_/0.6)] hover:shadow-lg hover:shadow-[hsl(180_100%_50%_/0.2)] transition-all duration-300 hover:scale-105">
+                        CI/CD Pipelines
                       </span>
                     </div>
                   </div>

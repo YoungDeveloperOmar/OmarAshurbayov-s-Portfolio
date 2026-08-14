@@ -34,6 +34,12 @@ const ProjectsComponent = () => {
         githubLink: 'https://github.com/YoungDeveloperOmar/Memento',
         externalLink: 'https://devpost.com/software/memento-rd7vea?ref_content=my-projects-tab&ref_feature=my_projects',
     },
+    {
+        title: 'IBM Lowell Events Calendar',
+        description: 'Rebuilt the IBM Lowell office events calendar from a w3publisher page into a responsive React + Vite web app, syncing employee event and learning data in real time. Added monthly/weekly views, event filtering by tag, and RSVP details used daily by IBM Lowell office employees.',
+        tech: ['React', 'Vite', 'REST APIs', 'Tailwind CSS', 'Responsive Design'],
+        gradient: 'from-[hsl(210_100%_60%_/0.2)] to-[hsl(230_80%_65%_/0.15)]',
+    },
 
   ];
 
@@ -73,14 +79,14 @@ const ProjectsComponent = () => {
                                     {project.title}
                                     </h3>
                                     <div className="flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-[hsl(0_0%_95%)]">
-                                    <a
+                                    {project.githubLink && ( <a
                                         href={project.githubLink}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="h-9 w-9 hover:bg-[hsl(180_100%_50%_/0.2)] hover:text-[hsl(180_100%_50%)] transition-all cursor-pointer flex items-center justify-center rounded-xl"
                                     >
                                         <Github className="h-6 w-6" />
-                                    </a>
+                                    </a> ) }
                                     {project.externalLink && ( <a
                                         href={project.externalLink}
                                         target="_blank"
